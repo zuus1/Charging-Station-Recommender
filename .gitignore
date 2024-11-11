@@ -3,7 +3,7 @@ config.py
 
 # test folders
 test/
-**/__pycache__/
+__pycache__/
 
 # Logs
 logs
