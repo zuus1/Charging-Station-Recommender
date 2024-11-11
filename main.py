@@ -1,6 +1,7 @@
 import chargers
 import filter
 import places
+from places import classify_type
 
 ######################################################
 # User Input
@@ -30,5 +31,8 @@ chargers.main(location, radius, charging_speed_pref)
 # Filter based on charging station preferences
 filter.main(operator_pref, plug_type_pref, charging_speed_pref)
 
-# Assign a place that best matches the user's activity using OpenAI 
-places.main(activity_pref)
+# Assign a place type that best matches the user's activity using OpenAI 
+classified_type = places.classify_type(activity_pref)
+print("Type:", classified_type)
+
+# Find places of the classified type using Google Places API
