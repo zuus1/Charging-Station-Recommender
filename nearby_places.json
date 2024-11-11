@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Bonefish Grill",
+        "address": "43304 11 Mile Rd, Novi",
+        "rating": 4.4,
+        "distance[m]": 101.07989602717
+    },
+    {
+        "name": "Athenian",
+        "address": "43324 11 Mile Rd, Novi",
+        "rating": 4.3,
+        "distance[m]": 121.46226754560435
+    }
+]

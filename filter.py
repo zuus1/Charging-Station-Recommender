@@ -1,6 +1,6 @@
 import json
 
-def main(operator_pref, plug_type_pref, charging_speed_pref):
+def filter_pref(operator_pref, plug_type_pref, charging_speed_pref):
     # Load the original charging station data from the JSON file
     with open("charging_stations.json", "r") as file:
         stations = json.load(file)

@@ -2,14 +2,14 @@ import json
 import requests
 from config import OPEN_CHARGE_API_KEY
 
-def get_charging_stations(location, radius, charging_speed_pref):
+def get_charging_stations(location, radius_charging, charging_speed_pref):
     url = "https://api.openchargemap.io/v3/poi/"
     params = {
         "key": OPEN_CHARGE_API_KEY,
         "latitude": location["lat"],
         "longitude": location["lng"],
-        "distance": radius,
-        "distanceunit": "miles",
+        "distance": radius_charging,
+        "distanceunit": "km",
         "minpowerkw": charging_speed_pref,  
         "maxresults": 10  # Limit the number of results
     }
@@ -22,7 +22,7 @@ def get_charging_stations(location, radius, charging_speed_pref):
         print("Error fetching data:", response.status_code)
         return []
 
-def main(location, radius, charging_speed_pref):
+def list_chargers(location, radius, charging_speed_pref):
     # Get the top 10 charging stations
     stations = get_charging_stations(location, radius, charging_speed_pref)
 
