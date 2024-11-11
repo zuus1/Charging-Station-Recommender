@@ -1,0 +1,30 @@
+[
+    {
+        "Station Number": 1,
+        "Name": "Walmart 5893 - Novi, MI",
+        "Address": "26090 Ingersol Dr",
+        "Operator": "Electrify America",
+        "Latitude": 42.482039,
+        "Longitude": -83.472597,
+        "Connections": [
+            {
+                "Power (kW)": 350,
+                "Connector Type": "CCS (Type 1)",
+                "Current Type": "DC",
+                "Level": "Level 3:  High (Over 40kW)",
+                "Quantity": 2
+            },
+            {
+                "Power (kW)": 150,
+                "Connector Type": "CCS (Type 1)",
+                "Current Type": "DC",
+                "Level": "Level 3:  High (Over 40kW)",
+                "Quantity": 2
+            }
+        ],
+        "Connector Counts": {
+            "CHAdeMO": 1,
+            "CCS (Type 1)": 4
+        }
+    }
+]
