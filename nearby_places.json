@@ -1,14 +1,90 @@
 [
     {
-        "name": "Bonefish Grill",
-        "address": "43304 11 Mile Rd, Novi",
-        "rating": 4.4,
-        "distance[m]": 101.07989602717
+        "Station Number": 1,
+        "Station Name": "Walmart 5893 - Novi, MI",
+        "Address": "26090 Ingersol Dr",
+        "Nearby Facilities": [
+            {
+                "name": "Walmart curbside pickup",
+                "address": "26090 Ingersol Dr, Novi",
+                "rating": 4.1,
+                "distance[m]": 133.73701802619595
+            },
+            {
+                "name": "Walmart Supercenter",
+                "address": "26090 Ingersol Dr, Novi",
+                "rating": 3.9,
+                "distance[m]": 158.22599131728603
+            },
+            {
+                "name": "Walmart Bakery",
+                "address": "26090 Ingersol Dr, Novi",
+                "rating": 4,
+                "distance[m]": 125.63807586021433
+            },
+            {
+                "name": "Nothing Bundt Cakes",
+                "address": "43280 11 Mile Rd, Novi",
+                "rating": 4.2,
+                "distance[m]": 83.41381641249993
+            }
+        ]
     },
     {
-        "name": "Athenian",
-        "address": "43324 11 Mile Rd, Novi",
-        "rating": 4.3,
-        "distance[m]": 121.46226754560435
+        "Station Number": 2,
+        "Station Name": "Cadillac - Novi",
+        "Address": "41350 Grand River Ave",
+        "Nearby Facilities": []
+    },
+    {
+        "Station Number": 3,
+        "Station Name": "Wixom Quick Stop",
+        "Address": "29330 Wixom Rd",
+        "Nearby Facilities": [
+            {
+                "name": "Wixom Quick Stop & Go",
+                "address": "29330 Wixom Rd, Wixom",
+                "rating": 5,
+                "distance[m]": 14.310658242648595
+            }
+        ]
+    },
+    {
+        "Station Number": 4,
+        "Station Name": "Northville, MI Supercharger",
+        "Address": "20401 Haggerty Road",
+        "Nearby Facilities": [
+            {
+                "name": "Meijer Bakery",
+                "address": "20401 Haggerty Rd, Northville Charter Township",
+                "rating": 5,
+                "distance[m]": 158.78992415789256
+            },
+            {
+                "name": "Meijer",
+                "address": "20401 Haggerty Rd, Northville Charter Township",
+                "rating": 4.2,
+                "distance[m]": 182.33634813398928
+            },
+            {
+                "name": "Meijer Express Gas Station",
+                "address": "20401 Haggerty Rd, Northville Charter Township",
+                "rating": 2.7,
+                "distance[m]": 159.16223145796445
+            }
+        ]
+    },
+    {
+        "Station Number": 5,
+        "Station Name": "EVgo Chase Bank Farmington Hills",
+        "Address": "New Market Road",
+        "Nearby Facilities": [
+            {
+                "name": "Heartland Marketplace- Farmington Hills MI",
+                "address": "33250 W 12 Mile Rd, Farmington Hills",
+                "rating": 4.2,
+                "distance[m]": 130.29078152979073
+            }
+        ]
     }
 ]

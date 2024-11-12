@@ -72,26 +72,6 @@
     },
     {
         "Station Number": 3,
-        "Name": "Northville, MI Supercharger",
-        "Address": "20401 Haggerty Road",
-        "Operator": "Tesla (Tesla-only charging)",
-        "Latitude": 42.437159,
-        "Longitude": -83.43808,
-        "Connections": [
-            {
-                "Power (kW)": 250,
-                "Connector Type": "NACS / Tesla Supercharger",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 12
-            }
-        ],
-        "Connector Counts": {
-            "NACS / Tesla Supercharger": 12
-        }
-    },
-    {
-        "Station Number": 4,
         "Name": "Wixom Quick Stop",
         "Address": "29330 Wixom Rd",
         "Operator": "Red E Charge",
@@ -108,6 +88,26 @@
         ],
         "Connector Counts": {
             "CCS (Type 1)": 4
+        }
+    },
+    {
+        "Station Number": 4,
+        "Name": "Northville, MI Supercharger",
+        "Address": "20401 Haggerty Road",
+        "Operator": "Tesla (Tesla-only charging)",
+        "Latitude": 42.437159,
+        "Longitude": -83.43808,
+        "Connections": [
+            {
+                "Power (kW)": 250,
+                "Connector Type": "NACS / Tesla Supercharger",
+                "Current Type": "DC",
+                "Level": "Level 3:  High (Over 40kW)",
+                "Quantity": 12
+            }
+        ],
+        "Connector Counts": {
+            "NACS / Tesla Supercharger": 12
         }
     },
     {

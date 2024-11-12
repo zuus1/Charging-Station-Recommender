@@ -21,8 +21,10 @@ def extract_keywords(activity_pref):
     response = openai.chat.completions.create(
         model="gpt-3.5-turbo",  
         messages=[
-            {"role": "system", "content": "You are an assistant that extracts keywords from the user query. Return 1 to 3 words."},
-            {"role": "user", "content": f"Convert the following query into keywords: '{activity_pref}'"},
+            {"role": "system", "content": """You are an assistant that 
+             extracts keywords from the user query. Return 1 to 3 words."""},
+            {"role": "user", "content": f"""Convert the following query 
+             into keywords: '{activity_pref}'"""},
         ]
     )
 

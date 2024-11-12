@@ -10,7 +10,7 @@ import places
 ######################################################
 
 # Current location
-location = {"lat": 42.482039, "lng": -83.472597}  # Detriot, MI  
+location = {"lat": 42.49209398259707, "lng": -83.47069934501044}  # Detroit, MI  
 
 # Charging station preferences
 operator_pref = "Electrify America"  
@@ -18,9 +18,9 @@ plug_type_pref = "CCS (Type 1)"
 charging_speed_pref = 150  # kW
 
 # User activity preferences
-# activity_pref = "I want to get milk, eggs, and bread."  # User activity
+activity_pref = "I want to get milk, eggs, and bread."  # User activity
 # activity_pref = "I want to get cookies."  # User activity
-activity_pref = "I want to get seafood."  # User activity
+# activity_pref = "I want to get seafood."  # User activity
 
 # Search radius
 radius_charging = 10  # km
@@ -41,7 +41,7 @@ keywords = prompt.extract_keywords(activity_pref)
 # classified_type = prompt.classify_type(activity_pref)
 
 # Find places of the classified type using Google Places API
-places.find_places_keyword(location, radius_places, keywords)
+places.find_places_keyword(radius_places, keywords)
 # places.find_places_type(location, radius_places, classified_type)
 
 ######################################################
