@@ -3,6 +3,43 @@ import json
 from config import GOOGLE_PLACES_API_KEY
 from math import radians, sin, cos, sqrt, atan2
 
+# Convert address to latitude and longitude
+def get_latlng(address):
+    # Base URL for the Geocoding API
+    url = "https://maps.googleapis.com/maps/api/geocode/json"
+    
+    # Parameters for the API request
+    params = {
+        "address": address,
+        "key": GOOGLE_PLACES_API_KEY,
+    }
+    
+    # Send the request to the API
+    response = requests.get(url, params=params)
+    data = response.json()  # Parse JSON response
+    
+    # Check the response for a valid result
+    if data['status'] == 'OK' and len(data['results']) > 0:
+        # Extract latitude and longitude
+        location = data['results'][0]['geometry']['location']  # This is already a dictionary
+        return location  # Return the location dictionary
+    else:
+        raise ValueError(f"Geocoding API returned an error: {data['status']}")
+    
+    # # Parse the response JSON
+    # if response.status_code == 200:
+    #     data = response.json()
+    #     if data['status'] == 'OK':
+    #         # Extract latitude and longitude
+    #         lat = data['results'][0]['geometry']['location']['lat']
+    #         lng = data['results'][0]['geometry']['location']['lng']
+    #         return lat, lng
+    #     else:
+    #         print(f"Geocoding API Error: {data['status']}")
+    # else:
+    #     print(f"HTTP Error: {response.status_code}")
+    # return None, None
+
 # Haversine formula to calculate distance between two lat/lng points
 def haversine_distance(lat1, lng1, lat2, lng2):
     R = 6371  # Earth radius in kilometers
@@ -16,7 +53,7 @@ def haversine_distance(lat1, lng1, lat2, lng2):
 # Function to find nearby places for each charging station
 def find_places_keyword(radius_places, keywords):
     # Load charging stations data
-    with open("charging_stations.json", 'r') as file:
+    with open("charging_stations_filtered.json", 'r') as file:
         charging_stations = json.load(file)
 
     all_results = []
