@@ -3,24 +3,32 @@
         "Station Number": 1,
         "Station Name": "Walmart 5893 - Novi, MI",
         "Address": "26090 Ingersol Dr",
+        "Latitude": 42.482039,
+        "Longitude": -83.472597,
+        "Distance to station [km]": 1.079692623144677,
+        "Operator": "Electrify America",
+        "Connector Counts": {
+            "CHAdeMO": 1,
+            "CCS (Type 1)": 4
+        },
         "Nearby Facilities": [
             {
                 "name": "Crumbl - Novi",
                 "address": "26060 Ingersol Dr, Novi",
                 "rating": 4.5,
-                "distance[m]": 55.977037348578236
+                "distance[m]": 0.055977037348578236
+            },
+            {
+                "name": "Tous Les Jours Novi",
+                "address": "42970 Grand River Ave, Novi",
+                "rating": 4.7,
+                "distance[m]": 0.31264470134003525
             },
             {
                 "name": "Nothing Bundt Cakes",
                 "address": "43280 11 Mile Rd, Novi",
                 "rating": 4.2,
-                "distance[m]": 83.41381641249993
-            },
-            {
-                "name": "The Honey Baked Ham Company",
-                "address": "43320 11 Mile Rd, Novi",
-                "rating": 4.4,
-                "distance[m]": 101.82100188411887
+                "distance[m]": 0.08341381641249992
             }
         ]
     },
@@ -28,42 +36,135 @@
         "Station Number": 2,
         "Station Name": "Enel X - Cadillac Novi",
         "Address": "41350 Grand River Ave",
-        "Nearby Facilities": []
+        "Latitude": 42.477133025702,
+        "Longitude": -83.454342749004,
+        "Distance to station [km]": 2.0560652018525527,
+        "Operator": "Unknown",
+        "Connector Counts": {
+            "Type 1 (J1772)": 4,
+            "CHAdeMO": 1,
+            "CCS (Type 1)": 1
+        },
+        "Nearby Facilities": [
+            {
+                "name": "Dairy Queen East (Treat and Cakes)",
+                "address": "41490 Grand River Ave E, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.30175096488502257
+            }
+        ]
     },
     {
         "Station Number": 3,
         "Station Name": "Cadillac - Novi",
         "Address": "41350 Grand River Ave",
-        "Nearby Facilities": []
+        "Latitude": 42.47660757074931,
+        "Longitude": -83.45443097260568,
+        "Distance to station [km]": 2.0975607263606233,
+        "Operator": "Enel X",
+        "Connector Counts": {
+            "CCS (Type 1)": 2,
+            "CHAdeMO": 2,
+            "Type 1 (J1772)": 2
+        },
+        "Nearby Facilities": [
+            {
+                "name": "Dairy Queen East (Treat and Cakes)",
+                "address": "41490 Grand River Ave E, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.30325819556391864
+            }
+        ]
     },
     {
         "Station Number": 4,
         "Station Name": "Nissan Technical Center",
         "Address": "39001 Sunrise Dr",
+        "Latitude": 42.493902,
+        "Longitude": -83.427189,
+        "Distance to station [km]": 3.5216487774791685,
+        "Operator": "Unknown",
+        "Connector Counts": {
+            "Type 1 (J1772)": 14,
+            "CHAdeMO": 1,
+            "CCS (Type 1)": 1
+        },
         "Nearby Facilities": []
     },
     {
         "Station Number": 5,
         "Station Name": "Wixom Quick Stop",
         "Address": "29330 Wixom Rd",
+        "Latitude": 42.5066,
+        "Longitude": -83.53584,
+        "Distance to station [km]": 5.649009774211729,
+        "Operator": "Red E Charge",
+        "Connector Counts": {
+            "CCS (Type 1)": 4
+        },
         "Nearby Facilities": []
     },
     {
         "Station Number": 7,
         "Station Name": "Meijer - Northville",
         "Address": "20401 Haggerty Road",
-        "Nearby Facilities": []
+        "Latitude": 42.435059,
+        "Longitude": -83.435708,
+        "Distance to station [km]": 6.884551606125143,
+        "Operator": "Shell Recharge Solutions (US)",
+        "Connector Counts": {
+            "Type 1 (J1772)": 4,
+            "CHAdeMO": 2,
+            "CCS (Type 1)": 2
+        },
+        "Nearby Facilities": [
+            {
+                "name": "Crumbl - Northville",
+                "address": "20075 Haggerty Rd, Northville Charter Township",
+                "rating": 4.8,
+                "distance[m]": 0.26387197074456825
+            }
+        ]
     },
     {
         "Station Number": 8,
         "Station Name": "EVgo Chase Bank Farmington Hills",
         "Address": "New Market Road",
+        "Latitude": 42.49902230431053,
+        "Longitude": -83.37534896620309,
+        "Distance to station [km]": 7.806325920786672,
+        "Operator": "eVgo Network",
+        "Connector Counts": {
+            "CCS (Type 1)": 4,
+            "CHAdeMO": 2
+        },
         "Nearby Facilities": []
     },
     {
         "Station Number": 9,
         "Station Name": "Amoco - Farmington",
         "Address": "22145 Farmington Rd",
+        "Latitude": 42.455277,
+        "Longitude": -83.376155,
+        "Distance to station [km]": 8.69188605086143,
+        "Operator": "ChargePoint",
+        "Connector Counts": {
+            "CHAdeMO": 2,
+            "CCS (Type 1)": 2
+        },
+        "Nearby Facilities": []
+    },
+    {
+        "Station Number": 10,
+        "Station Name": "Feldman Chevrolet - New Hudson",
+        "Address": "30400 Lyon Center Dr",
+        "Latitude": 42.515722,
+        "Longitude": -83.608279,
+        "Distance to station [km]": 11.647805942729823,
+        "Operator": "Unknown",
+        "Connector Counts": {
+            "CCS (Type 1)": 1
+        },
         "Nearby Facilities": []
     }
 ]

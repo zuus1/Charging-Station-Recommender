@@ -48,7 +48,7 @@ def haversine_distance(lat1, lng1, lat2, lng2):
     dlng = lng2 - lng1
     a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlng / 2)**2
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    return R * c * 1000  # Convert km to meters
+    return R * c # km
 
 # Function to find nearby places for each charging station
 def find_places_keyword(radius_places, keywords):
@@ -98,6 +98,11 @@ def find_places_keyword(radius_places, keywords):
                 "Station Number": station["Station Number"],
                 "Station Name": station["Name"],
                 "Address": station["Address"],
+                "Latitude": station["Latitude"],   
+                "Longitude": station["Longitude"],  
+                "Distance to station [km]": station["Distance to station [km]"],
+                "Operator": station["Operator"],
+                "Connector Counts": station["Connector Counts"],
                 "Nearby Facilities": nearby_places
             })
         else:
@@ -108,49 +113,6 @@ def find_places_keyword(radius_places, keywords):
         json.dump(all_results, json_file, indent=4)
     
     print("Results have been written to nearby_places.json")
-
-# def find_places_keyword(location, radius_places, keywords):
-#     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
-#     params = {
-#         "key": GOOGLE_PLACES_API_KEY,
-#         "location": f"{location['lat']},{location['lng']}",
-#         "radius": radius_places,
-#         "keyword": keywords,
-#     }
-
-#     response = requests.get(url, params=params)
-    
-#     if response.status_code == 200:
-#         data = response.json()
-#         results = data.get("results", [])
-
-#         # Extract the top 10 hits, ensure they are within the radius
-#         top_10_places = []
-#         for place in results[:10]:
-#             place_location = place.get("geometry", {}).get("location", {})
-#             distance = haversine_distance(
-#                 location["lat"], location["lng"],
-#                 place_location.get("lat"), place_location.get("lng")
-#             )
-#             if distance <= radius_places:
-#                 place_info = {
-#                     "name": place.get("name"),
-#                     "address": place.get("vicinity"),
-#                     "rating": place.get("rating"),
-#                     # "location": place.get("geometry", {}).get("location"),
-#                     "distance[m]": distance
-#                 }
-#                 top_10_places.append(place_info)
-
-#         # Write the results to a JSON file
-#         with open("nearby_places.json", 'w') as json_file:
-#             json.dump(top_10_places, json_file, indent=4)
-        
-#         print(f"Results have been written to nearby_places.json")          
-#         return top_10_places
-#     else:
-#         print("Error fetching data:", response.status_code)
-#         return []
     
 def find_places_type(location, radius_places, classified_type):
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"

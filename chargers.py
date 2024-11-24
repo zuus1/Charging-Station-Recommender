@@ -1,6 +1,8 @@
 import json
 import requests
 from config import OPEN_CHARGE_API_KEY
+import places
+from places import haversine_distance
 
 def get_charging_stations(location, radius_charging, min_charging_speed, max_charging_speed):
     url = "https://api.openchargemap.io/v3/poi/"
@@ -37,10 +39,14 @@ def list_chargers(location, radius, min_charging_speed, max_charging_speed):
         station_lat = station.get("AddressInfo", {}).get("Latitude")
         station_lng = station.get("AddressInfo", {}).get("Longitude")
 
+        # Calculate distance to charging station
+        distance_to_station = haversine_distance(location["lat"], location["lng"], station_lat, station_lng)
+
         station_data = {
             "Station Number": i,
             "Name": station.get("AddressInfo", {}).get("Title"),
             "Address": station.get("AddressInfo", {}).get("AddressLine1"),
+            "Distance to station [km]": distance_to_station,
             "Operator": operator_name,
             "Latitude": station_lat,   
             "Longitude": station_lng,  
