@@ -24,7 +24,7 @@ st.markdown(
         max-width: 2000px; /* Adjust the page width */
         padding-left: 2rem;  /* Optional: Adjust padding */
         padding-right: 2rem; /* Optional: Adjust padding */
-        padding-top: 2rem;  /* Reduce the top margin */
+        padding-top: 1rem;  /* Reduce the top margin */
     }
     </style>
     """,
@@ -40,6 +40,7 @@ st.title("Charging Station Recommender")
 # Initial empty locations flags
 locations_flags = []
 all_flags = []
+search_status = False
 
 st.sidebar.write("Enter your preferences to find EV charging stations:")
 
@@ -88,6 +89,7 @@ activity = st.sidebar.text_area("What would you like to do while you wait for ch
 
 # Add a search button
 if st.sidebar.button("Search"):
+    search_status = True
     if not(address and radius_charging and activity):
         st.sidebar.markdown(
             '<p style="color:red;">Please enter all required queries to search</p>',
@@ -156,14 +158,14 @@ if st.sidebar.button("Search"):
 
     all_flags = current_flag + locations_flags
 
-    # Change the row numbers to start from 1
-    df_display.index = range(1, len(df) + 1)
+    # # Change the row numbers to start from 1
+    # df_display.index = range(1, len(df) + 1)
 
-    # Display the extracted data in the Streamlit browser
-    if not df_display.empty:
-        st.write(df_display)
-    else:
-        st.write("No nearby facilities found.")
+    # # Display the extracted data in the Streamlit browser
+    # if not df_display.empty:
+    #     st.write(df_display)
+    # else:
+    #     st.write("No nearby facilities found.")
 
 ######################################################
 # Visualization of icon on map
@@ -241,5 +243,16 @@ map_html = f"""
 # Display initial empty map
 components.html(map_html, height=400)
 
+######################################################
+# Visualization of recommeded charging stations
+######################################################
 
+if search_status:
+    # Change the row numbers to start from 1
+    df_display.index = range(1, len(df) + 1)
 
+    # Display the extracted data in the Streamlit browser
+    if not df_display.empty:
+        st.write(df_display)
+    else:
+        st.write("No nearby facilities found.")

@@ -13,16 +13,16 @@
         },
         "Nearby Facilities": [
             {
+                "name": "Primealete Nutrition",
+                "address": "43341 Grand River Ave, Novi",
+                "rating": 4.4,
+                "distance[m]": 0.26654904989071837
+            },
+            {
                 "name": "First Watch",
                 "address": "26054 Ingersol Dr, Novi",
                 "rating": 4.4,
                 "distance[m]": 0.23213162968726356
-            },
-            {
-                "name": "Novi Coney Island",
-                "address": "25875 Novi Rd, Novi",
-                "rating": 4.4,
-                "distance[m]": 0.3876995791035658
             }
         ]
     },
@@ -47,10 +47,10 @@
                 "distance[m]": 0.31411538724047827
             },
             {
-                "name": "Tubby's Sub Shop",
+                "name": "Desika Foods and Home Style Kitchen",
                 "address": "41460 Grand River Ave, Novi",
-                "rating": 4.3,
-                "distance[m]": 0.2656472641111224
+                "rating": 4.6,
+                "distance[m]": 0.24555937017862528
             }
         ]
     },
@@ -75,10 +75,10 @@
                 "distance[m]": 0.3172720535127775
             },
             {
-                "name": "Tubby's Sub Shop",
+                "name": "Desika Foods and Home Style Kitchen",
                 "address": "41460 Grand River Ave, Novi",
-                "rating": 4.3,
-                "distance[m]": 0.265962024785688
+                "rating": 4.6,
+                "distance[m]": 0.24502439744747148
             }
         ]
     },
@@ -110,16 +110,10 @@
         },
         "Nearby Facilities": [
             {
-                "name": "Shawarma Stop To Go",
-                "address": "29330 Wixom Rd, Wixom",
-                "rating": 5,
-                "distance[m]": 0.017572165460811712
-            },
-            {
-                "name": "Wixom Food & More",
-                "address": "29330 Wixom Rd, Wixom",
-                "rating": 4,
-                "distance[m]": 0.019081852712792207
+                "name": "Gabby\u2019s Garden",
+                "address": "49201 West Rd, Wixom",
+                "rating": 3.9,
+                "distance[m]": 0.16747646566771893
             }
         ]
     },
@@ -138,10 +132,10 @@
         },
         "Nearby Facilities": [
             {
-                "name": "MISSION BBQ",
-                "address": "20420 Haggerty Rd, Northville Charter Township",
-                "rating": 4.7,
-                "distance[m]": 0.2156284682628102
+                "name": "Beyond Juicery + Eatery",
+                "address": "20450 Haggerty Rd, Northville",
+                "rating": 4.4,
+                "distance[m]": 0.2703854054068196
             },
             {
                 "name": "Chick-fil-A",
@@ -171,10 +165,10 @@
                 "distance[m]": 0.19768385373015313
             },
             {
-                "name": "Leo's Coney Island (12 Mile/Farmington Rd)",
-                "address": "33292 W 12 Mile Rd, Farmington Hills",
+                "name": "Poke Poke - Sushi Unrolled",
+                "address": "33216 W 12 Mile Rd, Farmington Hills",
                 "rating": 4.3,
-                "distance[m]": 0.18034108432192247
+                "distance[m]": 0.07780822530543054
             }
         ]
     }
