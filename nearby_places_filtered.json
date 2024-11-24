@@ -1,0 +1,181 @@
+[
+    {
+        "Station Number": 1,
+        "Station Name": "Walmart 5893 - Novi, MI",
+        "Address": "26090 Ingersol Dr",
+        "Latitude": 42.482039,
+        "Longitude": -83.472597,
+        "Distance to station [km]": 1.079692623144677,
+        "Operator": "Electrify America",
+        "Connector Counts": {
+            "CHAdeMO": 1,
+            "CCS (Type 1)": 4
+        },
+        "Nearby Facilities": [
+            {
+                "name": "First Watch",
+                "address": "26054 Ingersol Dr, Novi",
+                "rating": 4.4,
+                "distance[m]": 0.23213162968726356
+            },
+            {
+                "name": "Novi Coney Island",
+                "address": "25875 Novi Rd, Novi",
+                "rating": 4.4,
+                "distance[m]": 0.3876995791035658
+            }
+        ]
+    },
+    {
+        "Station Number": 2,
+        "Station Name": "Enel X - Cadillac Novi",
+        "Address": "41350 Grand River Ave",
+        "Latitude": 42.477133025702,
+        "Longitude": -83.454342749004,
+        "Distance to station [km]": 2.0560652018525527,
+        "Operator": "Unknown",
+        "Connector Counts": {
+            "Type 1 (J1772)": 4,
+            "CHAdeMO": 1,
+            "CCS (Type 1)": 1
+        },
+        "Nearby Facilities": [
+            {
+                "name": "La Vie Mediterranean Grill",
+                "address": "41490 Grand River Ave, Novi",
+                "rating": 4.6,
+                "distance[m]": 0.31411538724047827
+            },
+            {
+                "name": "Tubby's Sub Shop",
+                "address": "41460 Grand River Ave, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.2656472641111224
+            }
+        ]
+    },
+    {
+        "Station Number": 3,
+        "Station Name": "Cadillac - Novi",
+        "Address": "41350 Grand River Ave",
+        "Latitude": 42.47660757074931,
+        "Longitude": -83.45443097260568,
+        "Distance to station [km]": 2.0975607263606233,
+        "Operator": "Enel X",
+        "Connector Counts": {
+            "CCS (Type 1)": 2,
+            "CHAdeMO": 2,
+            "Type 1 (J1772)": 2
+        },
+        "Nearby Facilities": [
+            {
+                "name": "La Vie Mediterranean Grill",
+                "address": "41490 Grand River Ave, Novi",
+                "rating": 4.6,
+                "distance[m]": 0.3172720535127775
+            },
+            {
+                "name": "Tubby's Sub Shop",
+                "address": "41460 Grand River Ave, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.265962024785688
+            }
+        ]
+    },
+    {
+        "Station Number": 4,
+        "Station Name": "Nissan Technical Center",
+        "Address": "39001 Sunrise Dr",
+        "Latitude": 42.493902,
+        "Longitude": -83.427189,
+        "Distance to station [km]": 3.5216487774791685,
+        "Operator": "Unknown",
+        "Connector Counts": {
+            "Type 1 (J1772)": 14,
+            "CHAdeMO": 1,
+            "CCS (Type 1)": 1
+        },
+        "Nearby Facilities": []
+    },
+    {
+        "Station Number": 5,
+        "Station Name": "Wixom Quick Stop",
+        "Address": "29330 Wixom Rd",
+        "Latitude": 42.5066,
+        "Longitude": -83.53584,
+        "Distance to station [km]": 5.649009774211729,
+        "Operator": "Red E Charge",
+        "Connector Counts": {
+            "CCS (Type 1)": 4
+        },
+        "Nearby Facilities": [
+            {
+                "name": "Shawarma Stop To Go",
+                "address": "29330 Wixom Rd, Wixom",
+                "rating": 5,
+                "distance[m]": 0.017572165460811712
+            },
+            {
+                "name": "Wixom Food & More",
+                "address": "29330 Wixom Rd, Wixom",
+                "rating": 4,
+                "distance[m]": 0.019081852712792207
+            }
+        ]
+    },
+    {
+        "Station Number": 7,
+        "Station Name": "Meijer - Northville",
+        "Address": "20401 Haggerty Road",
+        "Latitude": 42.435059,
+        "Longitude": -83.435708,
+        "Distance to station [km]": 6.884551606125143,
+        "Operator": "Shell Recharge Solutions (US)",
+        "Connector Counts": {
+            "Type 1 (J1772)": 4,
+            "CHAdeMO": 2,
+            "CCS (Type 1)": 2
+        },
+        "Nearby Facilities": [
+            {
+                "name": "MISSION BBQ",
+                "address": "20420 Haggerty Rd, Northville Charter Township",
+                "rating": 4.7,
+                "distance[m]": 0.2156284682628102
+            },
+            {
+                "name": "Chick-fil-A",
+                "address": "20135 Haggerty Rd, Northville",
+                "rating": 4.4,
+                "distance[m]": 0.17494041333914773
+            }
+        ]
+    },
+    {
+        "Station Number": 8,
+        "Station Name": "EVgo Chase Bank Farmington Hills",
+        "Address": "New Market Road",
+        "Latitude": 42.49902230431053,
+        "Longitude": -83.37534896620309,
+        "Distance to station [km]": 7.806325920786672,
+        "Operator": "eVgo Network",
+        "Connector Counts": {
+            "CCS (Type 1)": 4,
+            "CHAdeMO": 2
+        },
+        "Nearby Facilities": [
+            {
+                "name": "La Kabob Restaurant",
+                "address": "33320 W 12 Mile Rd, Farmington Hills",
+                "rating": 4.5,
+                "distance[m]": 0.19768385373015313
+            },
+            {
+                "name": "Leo's Coney Island (12 Mile/Farmington Rd)",
+                "address": "33292 W 12 Mile Rd, Farmington Hills",
+                "rating": 4.3,
+                "distance[m]": 0.18034108432192247
+            }
+        ]
+    }
+]

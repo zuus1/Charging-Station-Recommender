@@ -260,55 +260,5 @@
             "CCS (Type 1)": 4,
             "CHAdeMO": 2
         }
-    },
-    {
-        "Station Number": 9,
-        "Name": "Amoco - Farmington",
-        "Address": "22145 Farmington Rd",
-        "Distance to station [km]": 8.69188605086143,
-        "Operator": "ChargePoint",
-        "Latitude": 42.455277,
-        "Longitude": -83.376155,
-        "Connections": [
-            {
-                "Power (kW)": 50,
-                "Connector Type": "CHAdeMO",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 2
-            },
-            {
-                "Power (kW)": 125,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 2
-            }
-        ],
-        "Connector Counts": {
-            "CHAdeMO": 2,
-            "CCS (Type 1)": 2
-        }
-    },
-    {
-        "Station Number": 10,
-        "Name": "Feldman Chevrolet - New Hudson",
-        "Address": "30400 Lyon Center Dr",
-        "Distance to station [km]": 11.647805942729823,
-        "Operator": "Unknown",
-        "Latitude": 42.515722,
-        "Longitude": -83.608279,
-        "Connections": [
-            {
-                "Power (kW)": 50,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 1
-            }
-        ],
-        "Connector Counts": {
-            "CCS (Type 1)": 1
-        }
     }
 ]

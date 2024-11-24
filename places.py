@@ -114,6 +114,23 @@ def find_places_keyword(radius_places, keywords):
     
     print("Results have been written to nearby_places.json")
     
+    # Make copy
+    all_results_filtered = all_results.copy()
+
+    # Extract the top 3 highest-rated nearby facilities for each station
+    for station in all_results_filtered:
+        if "Nearby Facilities" in station and station["Nearby Facilities"]:
+            # Sort facilities by rating in descending order and take the top 3
+            station["Nearby Facilities"] = sorted(
+                station["Nearby Facilities"], key=lambda x: x["rating"], reverse=True
+            )[:2]
+
+    # Write the updated JSON to another file
+    with open("nearby_places_filtered.json", "w") as output_file:
+        json.dump(all_results_filtered, output_file, indent=4)
+
+    print("Results have been written to nearby_places_filtered.json")
+
 def find_places_type(location, radius_places, classified_type):
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     params = {

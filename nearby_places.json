@@ -13,28 +13,64 @@
         },
         "Nearby Facilities": [
             {
-                "name": "Crumbl - Novi",
-                "address": "26060 Ingersol Dr, Novi",
-                "rating": 4.5,
-                "distance[m]": 0.055977037348578236
+                "name": "Jersey Mike's Subs",
+                "address": "26425 Novi Rd, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.41319952084766476
             },
             {
-                "name": "Tous Les Jours Novi",
-                "address": "42970 Grand River Ave, Novi",
-                "rating": 4.7,
-                "distance[m]": 0.31264470134003525
+                "name": "First Watch",
+                "address": "26054 Ingersol Dr, Novi",
+                "rating": 4.4,
+                "distance[m]": 0.23213162968726356
             },
             {
-                "name": "Nothing Bundt Cakes",
-                "address": "43280 11 Mile Rd, Novi",
-                "rating": 4.2,
-                "distance[m]": 0.08341381641249992
+                "name": "Panera Bread",
+                "address": "25875 Novi Rd, Novi",
+                "rating": 3.7,
+                "distance[m]": 0.4122224305483089
+            },
+            {
+                "name": "Novi Coney Island",
+                "address": "25875 Novi Rd, Novi",
+                "rating": 4.4,
+                "distance[m]": 0.3876995791035658
+            },
+            {
+                "name": "Famous Dave's Bar-B-Que",
+                "address": "43350 Crescent Blvd, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.31916762480903094
+            },
+            {
+                "name": "Kimchi Box",
+                "address": "43170 Grand River Ave, Novi",
+                "rating": 4.4,
+                "distance[m]": 0.17571154033721645
             },
             {
                 "name": "The Honey Baked Ham Company",
                 "address": "43320 11 Mile Rd, Novi",
                 "rating": 4.4,
                 "distance[m]": 0.10182100188411887
+            },
+            {
+                "name": "Potbelly Sandwich Shop",
+                "address": "43350 Grand River Ave, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.21916226065368716
+            },
+            {
+                "name": "Burger 21",
+                "address": "26425 Novi Rd Suite F, Novi",
+                "rating": 4.2,
+                "distance[m]": 0.37384044421616536
+            },
+            {
+                "name": "Wendy's",
+                "address": "26245 Novi Rd, Novi",
+                "rating": 3.7,
+                "distance[m]": 0.31248473262210275
             }
         ]
     },
@@ -53,10 +89,16 @@
         },
         "Nearby Facilities": [
             {
-                "name": "Dairy Queen East (Treat and Cakes)",
-                "address": "41490 Grand River Ave E, Novi",
+                "name": "Tubby's Sub Shop",
+                "address": "41460 Grand River Ave, Novi",
                 "rating": 4.3,
-                "distance[m]": 0.30175096488502257
+                "distance[m]": 0.2656472641111224
+            },
+            {
+                "name": "La Vie Mediterranean Grill",
+                "address": "41490 Grand River Ave, Novi",
+                "rating": 4.6,
+                "distance[m]": 0.31411538724047827
             }
         ]
     },
@@ -73,7 +115,20 @@
             "CHAdeMO": 2,
             "Type 1 (J1772)": 2
         },
-        "Nearby Facilities": []
+        "Nearby Facilities": [
+            {
+                "name": "Tubby's Sub Shop",
+                "address": "41460 Grand River Ave, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.265962024785688
+            },
+            {
+                "name": "La Vie Mediterranean Grill",
+                "address": "41490 Grand River Ave, Novi",
+                "rating": 4.6,
+                "distance[m]": 0.3172720535127775
+            }
+        ]
     },
     {
         "Station Number": 4,
@@ -101,7 +156,26 @@
         "Connector Counts": {
             "CCS (Type 1)": 4
         },
-        "Nearby Facilities": []
+        "Nearby Facilities": [
+            {
+                "name": "Wixom Food & More",
+                "address": "29330 Wixom Rd, Wixom",
+                "rating": 4,
+                "distance[m]": 0.019081852712792207
+            },
+            {
+                "name": "Shawarma Stop To Go",
+                "address": "29330 Wixom Rd, Wixom",
+                "rating": 5,
+                "distance[m]": 0.017572165460811712
+            },
+            {
+                "name": "Wendy's",
+                "address": "29480 Wixom Rd, Wixom",
+                "rating": 4,
+                "distance[m]": 0.13061859929560504
+            }
+        ]
     },
     {
         "Station Number": 7,
@@ -118,10 +192,58 @@
         },
         "Nearby Facilities": [
             {
-                "name": "Crumbl - Northville",
-                "address": "20075 Haggerty Rd, Northville Charter Township",
-                "rating": 4.8,
-                "distance[m]": 0.26387197074456825
+                "name": "Panera Bread",
+                "address": "20140 Haggerty Rd, Livonia",
+                "rating": 3.9,
+                "distance[m]": 0.22785993634763949
+            },
+            {
+                "name": "MISSION BBQ",
+                "address": "20420 Haggerty Rd, Northville Charter Township",
+                "rating": 4.7,
+                "distance[m]": 0.2156284682628102
+            },
+            {
+                "name": "Z!Eats (Formerly Zoup!)",
+                "address": "20065 Haggerty Rd, Northville Charter Township",
+                "rating": 4.2,
+                "distance[m]": 0.2653422211401288
+            },
+            {
+                "name": "Twin Peaks",
+                "address": "20120 Haggerty Rd, Livonia",
+                "rating": 4.3,
+                "distance[m]": 0.22201257548366463
+            },
+            {
+                "name": "Chick-fil-A",
+                "address": "20135 Haggerty Rd, Northville",
+                "rating": 4.4,
+                "distance[m]": 0.17494041333914773
+            },
+            {
+                "name": "Five Guys",
+                "address": "20571 Haggerty Rd, Northville Charter Township",
+                "rating": 4.3,
+                "distance[m]": 0.29530027951125604
+            },
+            {
+                "name": "Mr Kabob Xpress Grille & Catering Livonia",
+                "address": "19778 Haggerty Rd, Livonia",
+                "rating": 4.3,
+                "distance[m]": 0.4632924481325889
+            },
+            {
+                "name": "Wingstop",
+                "address": "20570 Haggerty Rd, Northville",
+                "rating": 2.5,
+                "distance[m]": 0.2815564031525685
+            },
+            {
+                "name": "Tropical Smoothie Cafe",
+                "address": "19790 Haggerty Rd, Livonia",
+                "rating": 4,
+                "distance[m]": 0.4691934682481473
             }
         ]
     },
@@ -139,38 +261,35 @@
         },
         "Nearby Facilities": [
             {
-                "name": "Dairy Queen",
-                "address": "33326 W 12 Mile Rd, Farmington Hills",
+                "name": "Jersey Mike's Subs",
+                "address": "33220 W 12 Mile Rd, Farmington Hills",
                 "rating": 4.2,
-                "distance[m]": 0.248291675253671
+                "distance[m]": 0.0806757706166444
+            },
+            {
+                "name": "La Kabob Restaurant",
+                "address": "33320 W 12 Mile Rd, Farmington Hills",
+                "rating": 4.5,
+                "distance[m]": 0.19768385373015313
+            },
+            {
+                "name": "Leo's Coney Island (12 Mile/Farmington Rd)",
+                "address": "33292 W 12 Mile Rd, Farmington Hills",
+                "rating": 4.3,
+                "distance[m]": 0.18034108432192247
+            },
+            {
+                "name": "Tim Hortons",
+                "address": "33340 W 12 Mile Rd, Farmington Hills",
+                "rating": 3.5,
+                "distance[m]": 0.15252597071352836
+            },
+            {
+                "name": "Wingstop",
+                "address": "33226 W 12 Mile Rd, Farmington Hills",
+                "rating": 3.6,
+                "distance[m]": 0.08535216547880196
             }
         ]
-    },
-    {
-        "Station Number": 9,
-        "Station Name": "Amoco - Farmington",
-        "Address": "22145 Farmington Rd",
-        "Latitude": 42.455277,
-        "Longitude": -83.376155,
-        "Distance to station [km]": 8.69188605086143,
-        "Operator": "ChargePoint",
-        "Connector Counts": {
-            "CHAdeMO": 2,
-            "CCS (Type 1)": 2
-        },
-        "Nearby Facilities": []
-    },
-    {
-        "Station Number": 10,
-        "Station Name": "Feldman Chevrolet - New Hudson",
-        "Address": "30400 Lyon Center Dr",
-        "Latitude": 42.515722,
-        "Longitude": -83.608279,
-        "Distance to station [km]": 11.647805942729823,
-        "Operator": "Unknown",
-        "Connector Counts": {
-            "CCS (Type 1)": 1
-        },
-        "Nearby Facilities": []
     }
 ]

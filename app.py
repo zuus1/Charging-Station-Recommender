@@ -114,7 +114,7 @@ if st.sidebar.button("Search"):
     radius_places = 150 # m
     places.find_places_keyword(radius_places, keywords)
 
-    with open("nearby_places.json", 'r') as file:
+    with open("nearby_places_filtered.json", 'r') as file:
         nearby_places = json.load(file)
 
     # Extract relevant data from the JSON file
