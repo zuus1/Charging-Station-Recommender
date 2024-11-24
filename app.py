@@ -133,6 +133,7 @@ if st.sidebar.button("Search"):
                     "Operator": station["Operator"],
                     "Nearby Facility": facility["name"],
                     "Rating": facility["rating"],
+                    "Website": facility["website"],
                 })
 
     # Remove lat/lng for display
@@ -147,6 +148,9 @@ if st.sidebar.button("Search"):
     df = pd.DataFrame(extracted_data)
     df_display = pd.DataFrame(extracted_data_display)       
 
+    # # Turn URL into links
+    # df_display["Website"] = df_display["Website"].apply(lambda x: f"[Visit Site]({x})")
+
     # Extract data to create the locations_flags list in the desired format
     locations_flags = []
     for idx, row in df.iterrows():
@@ -156,16 +160,8 @@ if st.sidebar.button("Search"):
             "longitude": row["Longitude"]
         })
 
+    # Combine the current location flag with the locations flags
     all_flags = current_flag + locations_flags
-
-    # # Change the row numbers to start from 1
-    # df_display.index = range(1, len(df) + 1)
-
-    # # Display the extracted data in the Streamlit browser
-    # if not df_display.empty:
-    #     st.write(df_display)
-    # else:
-    #     st.write("No nearby facilities found.")
 
 ######################################################
 # Visualization of icon on map

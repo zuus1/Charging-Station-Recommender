@@ -13,16 +13,20 @@
         },
         "Nearby Facilities": [
             {
-                "name": "Primealete Nutrition",
-                "address": "43341 Grand River Ave, Novi",
-                "rating": 4.4,
-                "distance[m]": 0.26654904989071837
+                "name": "Crumbl - Novi",
+                "address": "26060 Ingersol Dr, Novi",
+                "rating": 4.5,
+                "distance[m]": 0.055977037348578236,
+                "website": "https://crumblcookies.com/minovi?utm_source=google+business&utm_medium=profile&utm_campaign=CRUMBL-US+%7C+GOOGLE+BUSINESS+%7C+STORE+PAGE+%7C+ONGOING+%7C+CONSIDERATION+%7C+PROFILE",
+                "google_maps_url": "https://maps.google.com/?cid=1357235028351439393"
             },
             {
-                "name": "First Watch",
-                "address": "26054 Ingersol Dr, Novi",
-                "rating": 4.4,
-                "distance[m]": 0.23213162968726356
+                "name": "Walmart Bakery",
+                "address": "26090 Ingersol Dr, Novi",
+                "rating": 4,
+                "distance[m]": 0.12563807586021433,
+                "website": "https://www.walmart.com/store/5893-novi-mi/bakery/",
+                "google_maps_url": "https://maps.google.com/?cid=13492130166405212623"
             }
         ]
     },
@@ -41,16 +45,12 @@
         },
         "Nearby Facilities": [
             {
-                "name": "La Vie Mediterranean Grill",
-                "address": "41490 Grand River Ave, Novi",
-                "rating": 4.6,
-                "distance[m]": 0.31411538724047827
-            },
-            {
-                "name": "Desika Foods and Home Style Kitchen",
-                "address": "41460 Grand River Ave, Novi",
-                "rating": 4.6,
-                "distance[m]": 0.24555937017862528
+                "name": "Dairy Queen East (Treat and Cakes)",
+                "address": "41490 Grand River Ave E, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.30175096488502257,
+                "website": "http://www.dairyqueen.com/",
+                "google_maps_url": "https://maps.google.com/?cid=4658449969723792552"
             }
         ]
     },
@@ -69,16 +69,12 @@
         },
         "Nearby Facilities": [
             {
-                "name": "La Vie Mediterranean Grill",
-                "address": "41490 Grand River Ave, Novi",
-                "rating": 4.6,
-                "distance[m]": 0.3172720535127775
-            },
-            {
-                "name": "Desika Foods and Home Style Kitchen",
-                "address": "41460 Grand River Ave, Novi",
-                "rating": 4.6,
-                "distance[m]": 0.24502439744747148
+                "name": "Dairy Queen East (Treat and Cakes)",
+                "address": "41490 Grand River Ave E, Novi",
+                "rating": 4.3,
+                "distance[m]": 0.30325819556391864,
+                "website": "http://www.dairyqueen.com/",
+                "google_maps_url": "https://maps.google.com/?cid=4658449969723792552"
             }
         ]
     },
@@ -108,14 +104,7 @@
         "Connector Counts": {
             "CCS (Type 1)": 4
         },
-        "Nearby Facilities": [
-            {
-                "name": "Gabby\u2019s Garden",
-                "address": "49201 West Rd, Wixom",
-                "rating": 3.9,
-                "distance[m]": 0.16747646566771893
-            }
-        ]
+        "Nearby Facilities": []
     },
     {
         "Station Number": 7,
@@ -132,16 +121,20 @@
         },
         "Nearby Facilities": [
             {
-                "name": "Beyond Juicery + Eatery",
-                "address": "20450 Haggerty Rd, Northville",
-                "rating": 4.4,
-                "distance[m]": 0.2703854054068196
+                "name": "Crumbl - Northville",
+                "address": "20075 Haggerty Rd, Northville Charter Township",
+                "rating": 4.8,
+                "distance[m]": 0.26387197074456825,
+                "website": "https://crumblcookies.com/minorthville?utm_source=google+business&utm_medium=profile&utm_campaign=CRUMBL-US+%7C+GOOGLE+BUSINESS+%7C+STORE+PAGE+%7C+ONGOING+%7C+CONSIDERATION+%7C+PROFILE",
+                "google_maps_url": "https://maps.google.com/?cid=5927182959411685436"
             },
             {
-                "name": "Chick-fil-A",
-                "address": "20135 Haggerty Rd, Northville",
-                "rating": 4.4,
-                "distance[m]": 0.17494041333914773
+                "name": "Meijer",
+                "address": "20401 Haggerty Rd, Northville Charter Township",
+                "rating": 4.2,
+                "distance[m]": 0.13396691985134976,
+                "website": "https://www.meijer.com/shopping/store-locator/54.html?cmpid=LM:Web::::05112021::GoogleGrocery",
+                "google_maps_url": "https://maps.google.com/?cid=10396735697066810028"
             }
         ]
     },
@@ -159,16 +152,12 @@
         },
         "Nearby Facilities": [
             {
-                "name": "La Kabob Restaurant",
-                "address": "33320 W 12 Mile Rd, Farmington Hills",
-                "rating": 4.5,
-                "distance[m]": 0.19768385373015313
-            },
-            {
-                "name": "Poke Poke - Sushi Unrolled",
-                "address": "33216 W 12 Mile Rd, Farmington Hills",
-                "rating": 4.3,
-                "distance[m]": 0.07780822530543054
+                "name": "Dairy Queen",
+                "address": "33326 W 12 Mile Rd, Farmington Hills",
+                "rating": 4.2,
+                "distance[m]": 0.248291675253671,
+                "website": "http://www.dairyqueen.com/",
+                "google_maps_url": "https://maps.google.com/?cid=7743701784320137069"
             }
         ]
     }

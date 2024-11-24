@@ -26,20 +26,6 @@ def get_latlng(address):
     else:
         raise ValueError(f"Geocoding API returned an error: {data['status']}")
     
-    # # Parse the response JSON
-    # if response.status_code == 200:
-    #     data = response.json()
-    #     if data['status'] == 'OK':
-    #         # Extract latitude and longitude
-    #         lat = data['results'][0]['geometry']['location']['lat']
-    #         lng = data['results'][0]['geometry']['location']['lng']
-    #         return lat, lng
-    #     else:
-    #         print(f"Geocoding API Error: {data['status']}")
-    # else:
-    #     print(f"HTTP Error: {response.status_code}")
-    # return None, None
-
 # Haversine formula to calculate distance between two lat/lng points
 def haversine_distance(lat1, lng1, lat2, lng2):
     R = 6371  # Earth radius in kilometers
@@ -48,7 +34,7 @@ def haversine_distance(lat1, lng1, lat2, lng2):
     dlng = lng2 - lng1
     a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlng / 2)**2
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    return R * c # km
+    return R * c  # km
 
 # Function to find nearby places for each charging station
 def find_places_keyword(radius_places, keywords):
@@ -84,12 +70,35 @@ def find_places_keyword(radius_places, keywords):
                     station_location["lat"], station_location["lng"],
                     place_location.get("lat"), place_location.get("lng")
                 )
+
+                # Get the place_id for further details
+                place_id = place.get("place_id")
+                website_url = None
+                google_maps_url = None
+
+                # Get place details to extract the URL using place_id
+                if place_id:
+                    place_details_url = "https://maps.googleapis.com/maps/api/place/details/json"
+                    place_details_params = {
+                        "key": GOOGLE_PLACES_API_KEY,
+                        "place_id": place_id,
+                        "fields": "name,website,url"  # Specify the fields to get website and Google Maps URL
+                    }
+
+                    details_response = requests.get(place_details_url, params=place_details_params)
+                    if details_response.status_code == 200:
+                        details_data = details_response.json().get("result", {})
+                        website_url = details_data.get("website")
+                        google_maps_url = details_data.get("url")
+
                 if distance <= radius_places:
                     place_info = {
                         "name": place.get("name"),
                         "address": place.get("vicinity"),
                         "rating": place.get("rating"),
-                        "distance[m]": distance
+                        "distance[m]": distance,
+                        "website": website_url,
+                        "google_maps_url": google_maps_url                        
                     }
                     nearby_places.append(place_info)
 
