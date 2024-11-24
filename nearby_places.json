@@ -29,6 +29,12 @@
                 "address": "43280 11 Mile Rd, Novi",
                 "rating": 4.2,
                 "distance[m]": 0.08341381641249992
+            },
+            {
+                "name": "The Honey Baked Ham Company",
+                "address": "43320 11 Mile Rd, Novi",
+                "rating": 4.4,
+                "distance[m]": 0.10182100188411887
             }
         ]
     },
@@ -67,14 +73,7 @@
             "CHAdeMO": 2,
             "Type 1 (J1772)": 2
         },
-        "Nearby Facilities": [
-            {
-                "name": "Dairy Queen East (Treat and Cakes)",
-                "address": "41490 Grand River Ave E, Novi",
-                "rating": 4.3,
-                "distance[m]": 0.30325819556391864
-            }
-        ]
+        "Nearby Facilities": []
     },
     {
         "Station Number": 4,
@@ -138,7 +137,14 @@
             "CCS (Type 1)": 4,
             "CHAdeMO": 2
         },
-        "Nearby Facilities": []
+        "Nearby Facilities": [
+            {
+                "name": "Dairy Queen",
+                "address": "33326 W 12 Mile Rd, Farmington Hills",
+                "rating": 4.2,
+                "distance[m]": 0.248291675253671
+            }
+        ]
     },
     {
         "Station Number": 9,

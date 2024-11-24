@@ -12,6 +12,10 @@ import json
 import pandas as pd
 import streamlit.components.v1 as components
 
+######################################################
+# Main page setup
+######################################################
+
 # Custom CSS to expand the entire page width
 st.markdown(
     """
@@ -27,17 +31,16 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-######################################################
-# Main area for output
-######################################################
 st.title("Charging Station Recommender")
-
-# Initial empty locations flags
-locations_flags = []
 
 ######################################################
 # Sidebar for input
 ######################################################
+
+# Initial empty locations flags
+locations_flags = []
+all_flags = []
+
 st.sidebar.write("Enter your preferences to find EV charging stations:")
 
 address = st.sidebar.text_input("Current location (address)", "")
@@ -79,6 +82,10 @@ elif option_plug == 'NACS':
 # Create a text input field
 activity = st.sidebar.text_area("What would you like to do while you wait for charging?", height=100)
 
+######################################################
+# Run search
+######################################################
+
 # Add a search button
 if st.sidebar.button("Search"):
     if not(address and radius_charging and activity):
@@ -89,6 +96,9 @@ if st.sidebar.button("Search"):
 
     # Convert address to latitude and longitude
     location = places.get_latlng(address)
+
+    # Create a flag for the current location
+    current_flag = [{"name": "Current Location", "latitude": location["lat"], "longitude": location["lng"]}]
 
     # Find 10 closest charging stations using Open Charge Map API
     chargers.list_chargers(location, radius_charging, min_charging_speed, max_charging_speed)
@@ -123,17 +133,17 @@ if st.sidebar.button("Search"):
                     "Rating": facility["rating"],
                 })
 
+    # Remove lat/lng for display
+    extracted_data_display = []
+    for data in extracted_data:
+        modified_data = data.copy()  # Create a copy of each dictionary to avoid modifying the original
+        del modified_data["Latitude"]
+        del modified_data["Longitude"]
+        extracted_data_display.append(modified_data)
+
     # Convert the extracted data to a pandas DataFrame
     df = pd.DataFrame(extracted_data)
-
-    # Change the row numbers to start from 1
-    df.index = range(1, len(df) + 1)
-
-    # Display the extracted data in the Streamlit browser
-    if not df.empty:
-        st.write(df)
-    else:
-        st.write("No nearby facilities found.")
+    df_display = pd.DataFrame(extracted_data_display)       
 
     # Extract data to create the locations_flags list in the desired format
     locations_flags = []
@@ -144,21 +154,34 @@ if st.sidebar.button("Search"):
             "longitude": row["Longitude"]
         })
 
-    # # Example locations flags: Add as many as needed
-    # locations_flags = [
-    #     {"name": "Location 1", "latitude": 42.3601, "longitude": -71.0589},  # Boston, MA
-    #     {"name": "Location 2", "latitude": 40.7128, "longitude": -74.0060},  # New York, NY
-    #     {"name": "Location 3", "latitude": 34.0522, "longitude": -118.2437}, # Los Angeles, CA
-    # ]
+    all_flags = current_flag + locations_flags
+
+    # Change the row numbers to start from 1
+    df_display.index = range(1, len(df) + 1)
+
+    # Display the extracted data in the Streamlit browser
+    if not df_display.empty:
+        st.write(df_display)
+    else:
+        st.write("No nearby facilities found.")
+
+######################################################
+# Visualization of icon on map
+######################################################
 
 # Function to generate JavaScript code to add markers
-def generate_marker_js(locations_flags):
+def generate_marker_js(all_flags):
     marker_js = ""
-    for i, loc in enumerate(locations_flags):
+    
+    for i, loc in enumerate(all_flags):
+        # Alternate colors: Blue and Red
+        icon_url = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" if i == 0 else "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+        
         marker_js += f"""
         var marker{i} = new google.maps.Marker({{
           position: {{ lat: {loc["latitude"]}, lng: {loc["longitude"]} }},
           map: map,
+          icon: '{icon_url}',  // Custom icon for the marker
           title: "{loc['name']}"
         }});
         var infoWindow{i} = new google.maps.InfoWindow({{
@@ -170,18 +193,12 @@ def generate_marker_js(locations_flags):
         """
     return marker_js
 
-# # Initial map HTML with conditional center setting
-# map_center_js = (
-#     f"{{ lat: {locations_flags[0]['latitude']}, lng: {locations_flags[0]['longitude']} }}"
-#     if locations_flags
-#     else "{ lat: 39.8283, lng: -98.5795 }"  # Center of USA as default
-# )
-
 # Set map center and zoom based on whether there are locations available
 if locations_flags:
-    first_location = locations_flags[0]
-    map_center_js = f"{{ lat: {first_location['latitude']}, lng: {first_location['longitude']} }}"
-    map_zoom = 13  # Zoom level closer to the locations
+    # first_location = locations_flags[0]
+    current_location = current_flag[0]
+    map_center_js = f"{{ lat: {current_location['latitude']}, lng: {current_location['longitude']} }}"
+    map_zoom = 12  # Zoom level closer to the locations
 else:
     # Default to center of the USA if no locations available
     map_center_js = "{ lat: 39.8283, lng: -98.5795 }"
@@ -211,7 +228,7 @@ map_html = f"""
           zoom: {map_zoom},
           center: {map_center_js}  // Center of USA
         }});
-        {generate_marker_js(locations_flags) if locations_flags else ""}  // Add markers if available
+        {generate_marker_js(all_flags) if all_flags else ""}  // Add markers if available
       }}
     </script>
   </head>
