@@ -75,24 +75,7 @@
             "CHAdeMO": 2,
             "Type 1 (J1772)": 2
         },
-        "Nearby Facilities": [
-            {
-                "name": "La Vie Mediterranean Grill",
-                "address": "41490 Grand River Ave, Novi",
-                "rating": 4.6,
-                "distance[m]": 0.3172720535127775,
-                "website": "http://lavienovi.com/",
-                "google_maps_url": "https://maps.google.com/?cid=12248584821998835981"
-            },
-            {
-                "name": "Desika Foods and Home Style Kitchen",
-                "address": "41460 Grand River Ave, Novi",
-                "rating": 4.6,
-                "distance[m]": 0.24502439744747148,
-                "website": "https://www.desikahomestylekitchen.com/",
-                "google_maps_url": "https://maps.google.com/?cid=12474947071097521765"
-            }
-        ]
+        "Nearby Facilities": []
     },
     {
         "Station Number": 4,

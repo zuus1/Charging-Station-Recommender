@@ -26,6 +26,19 @@ st.markdown(
         padding-right: 2rem; /* Optional: Adjust padding */
         padding-top: 1rem;  /* Reduce the top margin */
     }
+    table {
+        width: 90%;
+        margin-left: 0rem;  /* Center the table horizontally */
+        margin-right: auto;        
+        font-size: 14px;        
+    }
+    th {
+        text-align: left !important;
+        # font-weight: normal !important;  /* Remove bold from header cells */               
+    }
+    td {
+        # font-weight: normal !important;  /* Remove bold from data cells */
+    }    
     </style>
     """,
     unsafe_allow_html=True,
@@ -116,7 +129,7 @@ if st.sidebar.button("Search"):
     radius_places = 150 # m
     places.find_places_keyword(radius_places, keywords)
 
-    with open("nearby_places_filtered.json", 'r') as file:
+    with open("nearby_places_no_duplicates.json", 'r') as file:
         nearby_places = json.load(file)
 
     # Extract relevant data from the JSON file
@@ -129,7 +142,7 @@ if st.sidebar.button("Search"):
                     "Charging Station Address": station["Address"],
                     "Latitude": station["Latitude"],
                     "Longitude": station["Longitude"],
-                    "Distance [mi]": station["Distance to station [km]"]/1.60934,
+                    "Distance [mi]": round(station["Distance to station [km]"]/1.60934, 1),
                     "Operator": station["Operator"],
                     "Nearby Facility": facility["name"],
                     "Rating": facility["rating"],
@@ -148,8 +161,9 @@ if st.sidebar.button("Search"):
     df = pd.DataFrame(extracted_data)
     df_display = pd.DataFrame(extracted_data_display)       
 
-    # # Turn URL into links
-    # df_display["Website"] = df_display["Website"].apply(lambda x: f"[Visit Site]({x})")
+    # Turn URL into links
+    df_display["Link"] = df_display["Website"].apply(lambda x: f'<a href="{x}" target="_blank">Website</a>')
+    df_display.drop(columns=["Website"], inplace=True)
 
     # Extract data to create the locations_flags list in the desired format
     locations_flags = []
@@ -231,7 +245,7 @@ map_html = f"""
     </script>
   </head>
   <body onload="initMap()">
-    <div id="map" style="width: 80%; height: 400px;"></div>
+    <div id="map" style="width: 90%; height: 400px;"></div>
   </body>
 </html>
 """
@@ -249,6 +263,7 @@ if search_status:
 
     # Display the extracted data in the Streamlit browser
     if not df_display.empty:
-        st.write(df_display)
+        # st.write(df_display)
+        st.write(df_display.to_html(escape=False), unsafe_allow_html=True)
     else:
         st.write("No nearby facilities found.")

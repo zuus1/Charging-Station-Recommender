@@ -140,6 +140,39 @@ def find_places_keyword(radius_places, keywords):
 
     print("Results have been written to nearby_places_filtered.json")
 
+    
+    # Make copy
+    all_results_no_duplicates = all_results_filtered.copy()
+
+    # Set to store (address, facility name) pairs for detecting duplicates
+    seen_pairs = set()
+
+    # Iterate through stations to identify and remove duplicate facilities
+    for station in all_results_no_duplicates:
+        station_address = station["Address"]
+
+        # Loop through nearby facilities to detect and remove duplicates
+        updated_nearby_facilities = []
+        for facility in station["Nearby Facilities"]:
+            facility_name = facility["name"]
+
+            # Create a unique pair to identify duplicates
+            station_pair = (station_address, facility_name)
+
+            # Check if the pair has been seen before
+            if station_pair not in seen_pairs:
+                seen_pairs.add(station_pair)
+                updated_nearby_facilities.append(facility)
+        
+        # Update the station's nearby facilities list
+        station["Nearby Facilities"] = updated_nearby_facilities
+
+    # Write the updated JSON to another file
+    with open("nearby_places_no_duplicates.json", "w") as output_file:
+        json.dump(all_results_no_duplicates, output_file, indent=4)
+
+    print("Results have been written to nearby_places_no_duplicates.json")
+
 def find_places_type(location, radius_places, classified_type):
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     params = {
