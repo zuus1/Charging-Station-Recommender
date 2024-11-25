@@ -3,7 +3,10 @@ import json
 from config import GOOGLE_PLACES_API_KEY
 from math import radians, sin, cos, sqrt, atan2
 
+######################################################
 # Convert address to latitude and longitude
+######################################################
+
 def get_latlng(address):
     # Base URL for the Geocoding API
     url = "https://maps.googleapis.com/maps/api/geocode/json"
@@ -26,7 +29,10 @@ def get_latlng(address):
     else:
         raise ValueError(f"Geocoding API returned an error: {data['status']}")
     
+######################################################
 # Haversine formula to calculate distance between two lat/lng points
+######################################################
+
 def haversine_distance(lat1, lng1, lat2, lng2):
     R = 6371  # Earth radius in kilometers
     lat1, lng1, lat2, lng2 = map(radians, [lat1, lng1, lat2, lng2])
@@ -36,7 +42,10 @@ def haversine_distance(lat1, lng1, lat2, lng2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return R * c  # km
 
-# Function to find nearby places for each charging station
+######################################################
+# Find nearby places for each charging station
+######################################################
+
 def find_places_keyword(radius_places, keywords):
     # Load charging stations data
     with open("charging_stations_filtered.json", 'r') as file:
@@ -122,11 +131,10 @@ def find_places_keyword(radius_places, keywords):
         json.dump(all_results, json_file, indent=4)
     
     print("Results have been written to nearby_places.json")
-    
-    # Make copy
-    all_results_filtered = all_results.copy()
 
     # Extract the top 3 highest-rated nearby facilities for each station
+    all_results_filtered = all_results.copy()
+
     for station in all_results_filtered:
         if "Nearby Facilities" in station and station["Nearby Facilities"]:
             # Sort facilities by rating in descending order and take the top 3
@@ -140,8 +148,7 @@ def find_places_keyword(radius_places, keywords):
 
     print("Results have been written to nearby_places_filtered.json")
 
-    
-    # Make copy
+    # Remove duplicates from the list of nearby facilities
     all_results_no_duplicates = all_results_filtered.copy()
 
     # Set to store (address, facility name) pairs for detecting duplicates
@@ -172,6 +179,10 @@ def find_places_keyword(radius_places, keywords):
         json.dump(all_results_no_duplicates, output_file, indent=4)
 
     print("Results have been written to nearby_places_no_duplicates.json")
+
+######################################################
+# Find places based on type
+######################################################
 
 def find_places_type(location, radius_places, classified_type):
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"

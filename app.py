@@ -4,7 +4,7 @@ from config import GOOGLE_PLACES_API_KEY
 import chargers
 import filter
 import prompt
-from prompt import classify_type
+# from prompt import classify_type
 from prompt import extract_keywords
 import places
 from places import get_latlng

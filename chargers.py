@@ -4,6 +4,10 @@ from config import OPEN_CHARGE_API_KEY
 import places
 from places import haversine_distance
 
+######################################################
+# Find charging stations
+######################################################
+
 def get_charging_stations(location, radius_charging, min_charging_speed, max_charging_speed):
     url = "https://api.openchargemap.io/v3/poi/"
     params = {

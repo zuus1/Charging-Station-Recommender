@@ -184,7 +184,16 @@
         "Connector Counts": {
             "CCS (Type 1)": 4
         },
-        "Nearby Facilities": []
+        "Nearby Facilities": [
+            {
+                "name": "Gabby\u2019s Garden",
+                "address": "49201 West Rd, Wixom",
+                "rating": 3.9,
+                "distance[m]": 0.16747646566771893,
+                "website": "http://gabbysgardenfoods.com/",
+                "google_maps_url": "https://maps.google.com/?cid=9702182301167338019"
+            }
+        ]
     },
     {
         "Station Number": 7,
@@ -217,20 +226,20 @@
                 "google_maps_url": "https://maps.google.com/?cid=3552327796628539417"
             },
             {
-                "name": "Tropical Smoothie Cafe",
-                "address": "19790 Haggerty Rd, Livonia",
-                "rating": 4,
-                "distance[m]": 0.4691934682481473,
-                "website": "https://locations.tropicalsmoothiecafe.com/mi/livonia/19790-haggerty-rd?y_source=1_MTM4MTk4NjMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-                "google_maps_url": "https://maps.google.com/?cid=12703506166744638003"
-            },
-            {
                 "name": "Beyond Juicery + Eatery",
                 "address": "20450 Haggerty Rd, Northville",
                 "rating": 4.4,
                 "distance[m]": 0.2703854054068196,
                 "website": "https://beyondjuiceryeatery.com/?utm_source=gbp&utm_medium=organic&utm_campaign=gbp-website",
                 "google_maps_url": "https://maps.google.com/?cid=2924974933551200385"
+            },
+            {
+                "name": "Tropical Smoothie Cafe",
+                "address": "19790 Haggerty Rd, Livonia",
+                "rating": 4,
+                "distance[m]": 0.4691934682481473,
+                "website": "https://locations.tropicalsmoothiecafe.com/mi/livonia/19790-haggerty-rd?y_source=1_MTM4MTk4NjMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+                "google_maps_url": "https://maps.google.com/?cid=12703506166744638003"
             },
             {
                 "name": "Mr Kabob Xpress Grille & Catering Livonia",

@@ -1,5 +1,9 @@
 import json
 
+######################################################
+# Filter charging stations based on user preferences
+######################################################
+
 def filter_pref(plug_type, min_charging_speed, max_charging_speed):
 # def filter_pref(operator_pref, plug_type_pref, min_charging_speed, max_charging_speed):
 

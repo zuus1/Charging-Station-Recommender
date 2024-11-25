@@ -103,7 +103,16 @@
         "Connector Counts": {
             "CCS (Type 1)": 4
         },
-        "Nearby Facilities": []
+        "Nearby Facilities": [
+            {
+                "name": "Gabby\u2019s Garden",
+                "address": "49201 West Rd, Wixom",
+                "rating": 3.9,
+                "distance[m]": 0.16747646566771893,
+                "website": "http://gabbysgardenfoods.com/",
+                "google_maps_url": "https://maps.google.com/?cid=9702182301167338019"
+            }
+        ]
     },
     {
         "Station Number": 7,
