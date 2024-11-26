@@ -13,20 +13,20 @@
         },
         "Nearby Facilities": [
             {
-                "name": "Primealete Nutrition",
-                "address": "43341 Grand River Ave, Novi",
+                "name": "Novi Coney Island",
+                "address": "25875 Novi Rd, Novi",
                 "rating": 4.4,
-                "distance[m]": 0.26654904989071837,
-                "website": "http://www.primealetenovi.com/",
-                "google_maps_url": "https://maps.google.com/?cid=8281049760333062639"
+                "distance[m]": 0.3876995791035658,
+                "website": "http://www.noviconey.com/",
+                "google_maps_url": "https://maps.google.com/?cid=13385354050398146190"
             },
             {
-                "name": "First Watch",
-                "address": "26054 Ingersol Dr, Novi",
+                "name": "Kimchi Box",
+                "address": "43170 Grand River Ave, Novi",
                 "rating": 4.4,
-                "distance[m]": 0.23213162968726356,
-                "website": "http://www.firstwatch.com/locations/novi/?utm_source=gbp-listing&utm_medium=organic&utm_campaign=gbp-listing&utm_content=novi",
-                "google_maps_url": "https://maps.google.com/?cid=17646932430528791696"
+                "distance[m]": 0.17571154033721645,
+                "website": "http://kimchiboxusa.com/",
+                "google_maps_url": "https://maps.google.com/?cid=6135582233094392662"
             }
         ]
     },
@@ -103,16 +103,7 @@
         "Connector Counts": {
             "CCS (Type 1)": 4
         },
-        "Nearby Facilities": [
-            {
-                "name": "Gabby\u2019s Garden",
-                "address": "49201 West Rd, Wixom",
-                "rating": 3.9,
-                "distance[m]": 0.16747646566771893,
-                "website": "http://gabbysgardenfoods.com/",
-                "google_maps_url": "https://maps.google.com/?cid=9702182301167338019"
-            }
-        ]
+        "Nearby Facilities": []
     },
     {
         "Station Number": 7,
@@ -168,12 +159,12 @@
                 "google_maps_url": "https://maps.google.com/?cid=17817364561795147154"
             },
             {
-                "name": "Poke Poke - Sushi Unrolled",
-                "address": "33216 W 12 Mile Rd, Farmington Hills",
+                "name": "Leo's Coney Island (12 Mile/Farmington Rd)",
+                "address": "33292 W 12 Mile Rd, Farmington Hills",
                 "rating": 4.3,
-                "distance[m]": 0.07780822530543054,
-                "website": "https://eatpokepoke.com/stores/farmington/?utm_source=GoogleBusinessProfile&utm_medium=organic&utm_campaign=gmb-website-link",
-                "google_maps_url": "https://maps.google.com/?cid=15885846964360737845"
+                "distance[m]": 0.18034108432192247,
+                "website": "http://www.leosconeyisland.com/",
+                "google_maps_url": "https://maps.google.com/?cid=7258660098801488569"
             }
         ]
     }
