@@ -51,7 +51,6 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 ## Usage 
 1. Run the application <br>
-   To run this system, use the command below:
     ```bash
     streamlit run app.py
     ```
@@ -62,8 +61,7 @@ OPENAI_API_KEY=your_openai_api_key_here
    - Plug type (CCS1, NACS, CHAdeMO, J1772)
    - Activity preference 
 
-3. Search <br>
-   Click the Search button
+3. Click the Search button <br>
 
 4. Results <br>
    - Map displays makers for current location (blue) and charging stations (red)
