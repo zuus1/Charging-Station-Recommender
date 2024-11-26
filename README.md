@@ -67,6 +67,3 @@ OPENAI_API_KEY=your_openai_api_key_here
    - Map displays makers for current location (blue) and charging stations (red)
    - Click on marker for details 
    - Table shows a list of recommendations of charging stations along with distances to charging stations, charging station operators, nearby facilities for the preferred acitivity and their ratings, and links to their websites.
-
-## Video
-https://drive.google.com/file/d/1sYY9SLUavioO_SBD_gMkR7182TjhvunR/view?usp=drive_link
