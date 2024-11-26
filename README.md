@@ -8,7 +8,7 @@ This system comprises the following features:
 - ``chargers.py`` <br>
   Interacts with Open Charge Map API to find nearby charging stations.
 - ``filter.py`` <br>
-  Filters the charging stations based on user's charging station preferences like plug type and charging speed.
+  Filters the charging stations based on user's charging station preferences such as plug type and charging speed.
 - ``prompt.py`` <br>
   Interacts with OpenAI API to extract keywords from user's activity preference.
 - ``places.py`` <br>
@@ -22,7 +22,7 @@ This system requires the following libraries.
 3. Pandas
 4. json
 
-The libraries can be installed with the command below:
+Use command below to install libraries:
 ```bash
 pip install streamlit requests pandas python-dotenv
 ```
@@ -34,12 +34,12 @@ This system requires the following APIs.
   Used to find charging stations and gather charging station spec. API key can be obtained at https://openchargemap.io.
 
 2. Google API <br>
-  Used to convert address to latitude and longitude, gather data of facilities near charging stations, and embed Google Maps in user interface. API key can be obtained at https://cloud.google.com/cloud-console. Following APIs need to be enabled in API & Services setting: <br>
+  Used to convert address to latitude and longitude, gather data of facilities near charging stations, and embed Google Maps in the user interface. API key can be obtained at https://cloud.google.com/cloud-console. Following APIs need to be enabled in API & Services setting: <br>
     - Google Geocoding API
     - Google Places API
     - Google Maps JavaScript API 
 
-3. Open AI API <br>
+3. OpenAI API <br>
   Used to extract keywords from user's activity preferences. API key can be obtained at https://platform.openai.com.
 
 After obtaining the APIs, define the API keys as follows in ``config.py``:
