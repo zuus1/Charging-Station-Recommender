@@ -1,129 +1,21 @@
 [
     {
-        "Station Number": 1,
-        "Station Name": "Walmart 5893 - Novi, MI",
-        "Address": "26090 Ingersol Dr",
-        "Latitude": 42.482039,
-        "Longitude": -83.472597,
-        "Distance to station [km]": 1.079692623144677,
-        "Operator": "Electrify America",
-        "Connector Counts": {
-            "CHAdeMO": 1,
-            "CCS (Type 1)": 4
-        },
-        "Nearby Facilities": [
-            {
-                "name": "Novi Coney Island",
-                "address": "25875 Novi Rd, Novi",
-                "rating": 4.4,
-                "distance[m]": 0.3876995791035658,
-                "website": "http://www.noviconey.com/",
-                "google_maps_url": "https://maps.google.com/?cid=13385354050398146190"
-            },
-            {
-                "name": "Kimchi Box",
-                "address": "43170 Grand River Ave, Novi",
-                "rating": 4.4,
-                "distance[m]": 0.17571154033721645,
-                "website": "http://kimchiboxusa.com/",
-                "google_maps_url": "https://maps.google.com/?cid=6135582233094392662"
-            }
-        ]
-    },
-    {
-        "Station Number": 2,
-        "Station Name": "Enel X - Cadillac Novi",
-        "Address": "41350 Grand River Ave",
-        "Latitude": 42.477133025702,
-        "Longitude": -83.454342749004,
-        "Distance to station [km]": 2.0560652018525527,
-        "Operator": "Unknown",
-        "Connector Counts": {
-            "Type 1 (J1772)": 4,
-            "CHAdeMO": 1,
-            "CCS (Type 1)": 1
-        },
-        "Nearby Facilities": [
-            {
-                "name": "La Vie Mediterranean Grill",
-                "address": "41490 Grand River Ave, Novi",
-                "rating": 4.6,
-                "distance[m]": 0.31411538724047827,
-                "website": "http://lavienovi.com/",
-                "google_maps_url": "https://maps.google.com/?cid=12248584821998835981"
-            },
-            {
-                "name": "Desika Foods and Home Style Kitchen",
-                "address": "41460 Grand River Ave, Novi",
-                "rating": 4.6,
-                "distance[m]": 0.24555937017862528,
-                "website": "https://www.desikahomestylekitchen.com/",
-                "google_maps_url": "https://maps.google.com/?cid=12474947071097521765"
-            }
-        ]
-    },
-    {
-        "Station Number": 3,
-        "Station Name": "Cadillac - Novi",
-        "Address": "41350 Grand River Ave",
-        "Latitude": 42.47660757074931,
-        "Longitude": -83.45443097260568,
-        "Distance to station [km]": 2.0975607263606233,
-        "Operator": "Enel X",
-        "Connector Counts": {
-            "CCS (Type 1)": 2,
-            "CHAdeMO": 2,
-            "Type 1 (J1772)": 2
-        },
-        "Nearby Facilities": []
-    },
-    {
-        "Station Number": 4,
-        "Station Name": "Nissan Technical Center",
-        "Address": "39001 Sunrise Dr",
-        "Latitude": 42.493902,
-        "Longitude": -83.427189,
-        "Distance to station [km]": 3.5216487774791685,
-        "Operator": "Unknown",
-        "Connector Counts": {
-            "Type 1 (J1772)": 14,
-            "CHAdeMO": 1,
-            "CCS (Type 1)": 1
-        },
-        "Nearby Facilities": []
-    },
-    {
-        "Station Number": 5,
-        "Station Name": "Wixom Quick Stop",
-        "Address": "29330 Wixom Rd",
-        "Latitude": 42.5066,
-        "Longitude": -83.53584,
-        "Distance to station [km]": 5.649009774211729,
-        "Operator": "Red E Charge",
-        "Connector Counts": {
-            "CCS (Type 1)": 4
-        },
-        "Nearby Facilities": []
-    },
-    {
-        "Station Number": 7,
-        "Station Name": "Meijer - Northville",
+        "Station Number": 6,
+        "Station Name": "Northville, MI Supercharger",
         "Address": "20401 Haggerty Road",
-        "Latitude": 42.435059,
-        "Longitude": -83.435708,
-        "Distance to station [km]": 6.884551606125143,
-        "Operator": "Shell Recharge Solutions (US)",
+        "Latitude": 42.437159,
+        "Longitude": -83.43808,
+        "Distance to station [km]": 6.59239119785777,
+        "Operator": "Tesla (Tesla-only charging)",
         "Connector Counts": {
-            "Type 1 (J1772)": 4,
-            "CHAdeMO": 2,
-            "CCS (Type 1)": 2
+            "NACS / Tesla Supercharger": 12
         },
         "Nearby Facilities": [
             {
                 "name": "Beyond Juicery + Eatery",
                 "address": "20450 Haggerty Rd, Northville",
                 "rating": 4.4,
-                "distance[m]": 0.2703854054068196,
+                "distance[m]": 0.33210485129785783,
                 "website": "https://beyondjuiceryeatery.com/?utm_source=gbp&utm_medium=organic&utm_campaign=gbp-website",
                 "google_maps_url": "https://maps.google.com/?cid=2924974933551200385"
             },
@@ -131,40 +23,9 @@
                 "name": "Chick-fil-A",
                 "address": "20135 Haggerty Rd, Northville",
                 "rating": 4.4,
-                "distance[m]": 0.17494041333914773,
+                "distance[m]": 0.4788130405263477,
                 "website": "https://www.chick-fil-a.com/locations/mi/northville-mi?utm_source=yext&utm_medium=link",
                 "google_maps_url": "https://maps.google.com/?cid=4207347840007725278"
-            }
-        ]
-    },
-    {
-        "Station Number": 8,
-        "Station Name": "EVgo Chase Bank Farmington Hills",
-        "Address": "New Market Road",
-        "Latitude": 42.49902230431053,
-        "Longitude": -83.37534896620309,
-        "Distance to station [km]": 7.806325920786672,
-        "Operator": "eVgo Network",
-        "Connector Counts": {
-            "CCS (Type 1)": 4,
-            "CHAdeMO": 2
-        },
-        "Nearby Facilities": [
-            {
-                "name": "La Kabob Restaurant",
-                "address": "33320 W 12 Mile Rd, Farmington Hills",
-                "rating": 4.5,
-                "distance[m]": 0.19768385373015313,
-                "website": "http://www.lakabobrestaurant.com/",
-                "google_maps_url": "https://maps.google.com/?cid=17817364561795147154"
-            },
-            {
-                "name": "Leo's Coney Island (12 Mile/Farmington Rd)",
-                "address": "33292 W 12 Mile Rd, Farmington Hills",
-                "rating": 4.3,
-                "distance[m]": 0.18034108432192247,
-                "website": "http://www.leosconeyisland.com/",
-                "google_maps_url": "https://maps.google.com/?cid=7258660098801488569"
             }
         ]
     }

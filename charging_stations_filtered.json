@@ -1,173 +1,23 @@
 [
     {
-        "Station Number": 1,
-        "Name": "Walmart 5893 - Novi, MI",
-        "Address": "26090 Ingersol Dr",
-        "Distance to station [km]": 1.079692623144677,
-        "Operator": "Electrify America",
-        "Latitude": 42.482039,
-        "Longitude": -83.472597,
-        "Connections": [
-            {
-                "Power (kW)": 350,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 2
-            },
-            {
-                "Power (kW)": 150,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 2
-            }
-        ],
-        "Connector Counts": {
-            "CHAdeMO": 1,
-            "CCS (Type 1)": 4
-        }
-    },
-    {
-        "Station Number": 2,
-        "Name": "Enel X - Cadillac Novi",
-        "Address": "41350 Grand River Ave",
-        "Distance to station [km]": 2.0560652018525527,
-        "Operator": "Unknown",
-        "Latitude": 42.477133025702,
-        "Longitude": -83.454342749004,
-        "Connections": [
-            {
-                "Power (kW)": 50,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 1
-            }
-        ],
-        "Connector Counts": {
-            "Type 1 (J1772)": 4,
-            "CHAdeMO": 1,
-            "CCS (Type 1)": 1
-        }
-    },
-    {
-        "Station Number": 3,
-        "Name": "Cadillac - Novi",
-        "Address": "41350 Grand River Ave",
-        "Distance to station [km]": 2.0975607263606233,
-        "Operator": "Enel X",
-        "Latitude": 42.47660757074931,
-        "Longitude": -83.45443097260568,
-        "Connections": [
-            {
-                "Power (kW)": 150,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 2
-            }
-        ],
-        "Connector Counts": {
-            "CCS (Type 1)": 2,
-            "CHAdeMO": 2,
-            "Type 1 (J1772)": 2
-        }
-    },
-    {
-        "Station Number": 4,
-        "Name": "Nissan Technical Center",
-        "Address": "39001 Sunrise Dr",
-        "Distance to station [km]": 3.5216487774791685,
-        "Operator": "Unknown",
-        "Latitude": 42.493902,
-        "Longitude": -83.427189,
-        "Connections": [
-            {
-                "Power (kW)": 50,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 1
-            }
-        ],
-        "Connector Counts": {
-            "Type 1 (J1772)": 14,
-            "CHAdeMO": 1,
-            "CCS (Type 1)": 1
-        }
-    },
-    {
-        "Station Number": 5,
-        "Name": "Wixom Quick Stop",
-        "Address": "29330 Wixom Rd",
-        "Distance to station [km]": 5.649009774211729,
-        "Operator": "Red E Charge",
-        "Latitude": 42.5066,
-        "Longitude": -83.53584,
-        "Connections": [
-            {
-                "Power (kW)": 160,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 4
-            }
-        ],
-        "Connector Counts": {
-            "CCS (Type 1)": 4
-        }
-    },
-    {
-        "Station Number": 7,
-        "Name": "Meijer - Northville",
+        "Station Number": 6,
+        "Name": "Northville, MI Supercharger",
         "Address": "20401 Haggerty Road",
-        "Distance to station [km]": 6.884551606125143,
-        "Operator": "Shell Recharge Solutions (US)",
-        "Latitude": 42.435059,
-        "Longitude": -83.435708,
+        "Distance to station [km]": 6.59239119785777,
+        "Operator": "Tesla (Tesla-only charging)",
+        "Latitude": 42.437159,
+        "Longitude": -83.43808,
         "Connections": [
             {
-                "Power (kW)": 50,
-                "Connector Type": "CCS (Type 1)",
+                "Power (kW)": 250,
+                "Connector Type": "NACS / Tesla Supercharger",
                 "Current Type": "DC",
                 "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 2
+                "Quantity": 12
             }
         ],
         "Connector Counts": {
-            "Type 1 (J1772)": 4,
-            "CHAdeMO": 2,
-            "CCS (Type 1)": 2
-        }
-    },
-    {
-        "Station Number": 8,
-        "Name": "EVgo Chase Bank Farmington Hills",
-        "Address": "New Market Road",
-        "Distance to station [km]": 7.806325920786672,
-        "Operator": "eVgo Network",
-        "Latitude": 42.49902230431053,
-        "Longitude": -83.37534896620309,
-        "Connections": [
-            {
-                "Power (kW)": 350,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 2
-            },
-            {
-                "Power (kW)": 100,
-                "Connector Type": "CCS (Type 1)",
-                "Current Type": "DC",
-                "Level": "Level 3:  High (Over 40kW)",
-                "Quantity": 2
-            }
-        ],
-        "Connector Counts": {
-            "CCS (Type 1)": 4,
-            "CHAdeMO": 2
+            "NACS / Tesla Supercharger": 12
         }
     }
 ]
